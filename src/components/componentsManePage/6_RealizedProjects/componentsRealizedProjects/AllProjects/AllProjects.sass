@@ -1,0 +1,55 @@
+.allProjects
+  display: flex
+  flex-direction: column
+  width: 100%
+  margin: 0 auto
+  .allProjects__items
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 38px
+    margin-top: 72px
+    margin-bottom: 45px
+    .item:first-child
+      font-size: 14px
+      text-transform: uppercase
+      color: #000000
+    .itemImg
+      margin-bottom: 5px
+      img
+    .item
+      font-size: 14px
+      text-transform: uppercase
+      color: rgba(0, 0, 0, 0.6)
+  .allProjects__images
+    display: block
+    flex-direction: column
+    justify-content: space-between
+    width: 100%
+    margin: 0 auto
+    .block
+      display: grid
+      width: 100%
+      justify-content: space-between
+      grid-template-columns: repeat(3, 1fr)
+      //grid-auto-rows: 100%
+      div
+        margin-right: 1%
+
+@media screen and (max-width: 960px)
+  .allProjects
+    .allProjects__items
+      height: 38px
+      margin-top: 51px
+      margin-bottom: 27px
+      .item:first-child
+        font-size: 10px
+      .item
+        font-size: 10px
+    .allProjects__images
+      .block
+        display: grid
+        width: 100%
+        grid-template-columns: repeat(3, 1fr)
+        div
+          margin-right: 0

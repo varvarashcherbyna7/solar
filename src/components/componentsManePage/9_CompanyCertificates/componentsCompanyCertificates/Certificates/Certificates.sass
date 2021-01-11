@@ -1,0 +1,48 @@
+.blockImages
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  flex-wrap: wrap
+  .blockImages1_4, .blockImages5_7
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .blockImages__image
+      border: 1px solid rgba(255, 255, 255, 0.6)
+      .borderBox
+        width: 90%
+        height: 89%
+        margin: 5% auto
+        img
+          width: 100%
+          height: 100%
+  .blockImages5_7
+    margin-top: 3%
+    .blockImages__image
+        width: 31%
+        .borderBox
+          width: 90%
+          img
+            width: 100%
+
+@media screen and (max-width: 960px)
+  .blockImages
+    .blockImages1_4
+      .blockImages__image
+        .borderBox
+          width: 86%
+          height: 85%
+          margin: 5% auto
+          img
+            width: 99%
+            height: 99%
+      .certificate1, .certificate2, .certificate3
+        margin-right: 13px
+    .blockImages5_7
+      margin-top: 3%
+      .blockImages__image
+        width: 31.5%
+        .borderBox
+          width: 90%
+          img
+            width: 100%

@@ -1,0 +1,45 @@
+.containerCompanyCertificates
+  width: 100%
+  position: relative
+  background: center/100% no-repeat url("imgCompanyCertificates/bg.png")
+  background-size: cover
+  padding-bottom: 171px
+  .containerCompanyCertificates__imgTextRight
+    position: absolute
+    right: 0
+  .containerCompanyCertificates__context
+    max-width: 1114px
+    margin: 0 auto
+    .blockText
+      display: flex
+      justify-content: space-between
+      padding-top: 81px
+      padding-bottom: 81px
+      .blockText__headerText
+        font-size: 48px
+        width: 246px
+        .blockText__headerText-yellow
+          color: #e69600
+      .blockText__text
+        width: 800px
+        font-size: 16px
+        line-height: 30px
+
+@media screen and (max-width: 960px)
+  .containerCompanyCertificates
+    padding-bottom: 66px
+    .containerCompanyCertificates__imgTextRight
+      display: none
+    .containerCompanyCertificates__context
+      max-width: 726px
+      .blockText
+        justify-content: left
+        padding-top: 50px
+        padding-bottom: 50px
+        .blockText__headerText
+          font-size: 22px
+          width: 25%
+        .blockText__text
+          width: 70%
+          font-size: 11px
+          line-height: 20px

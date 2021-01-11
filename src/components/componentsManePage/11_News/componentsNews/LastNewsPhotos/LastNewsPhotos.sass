@@ -1,0 +1,112 @@
+.blockLastNewsPhotos
+  width: 53%
+  display: flex
+  justify-content: space-between
+  position: absolute
+  top: 188px
+  right: 90px
+  .lastNewsPhotos
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    margin-right: 3px
+    position: relative
+    .lastNewsPhotos__img
+      width: 300px
+      height: 300px
+      .blockImg
+        width: 287px
+        height: 287px
+    .lastNewsPhotos__headerText
+      font-size: 22px
+      font-weight: bold
+      margin-top: 33px
+      margin-bottom: 18px
+      .headerText
+        .btnRead
+          font-size: 16px
+          color: rgba(255, 255, 255, 0.6)
+          border-bottom: 1px solid transparent
+          text-align: center
+          position: absolute
+          bottom: 0
+          right: 15px
+        &:hover .btnRead
+          color: #e69600
+          border-bottom: 1px solid #e69600
+        &:hover
+          color: #e69600
+    .lastNewsPhotos__text
+      font-size: 16px
+      line-height: 30px
+      color: rgba(255, 255, 255, 0.6)
+    .lastNewsPhotos__dataBtnRead
+      width: 287px
+      display: flex
+      justify-content: space-between
+      margin-top: 30px
+      .data
+        color: rgba(255, 255, 255, 0.6)
+.blockLastNewsPhotos .lastNewsPhotos4
+  width: 91px
+  position: absolute
+  right: -92px
+  .lastNewsPhotos__img
+    width: 100%
+    .blockImg
+      width: 91px
+  .lastNewsPhotos__headerText, .lastNewsPhotos__text, .lastNewsPhotos__dataBtnRead
+    display: none
+    //position: absolute
+
+@media screen and (max-width: 960px)
+  .blockLastNewsPhotos
+    width: 726px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    position: absolute
+    left: 0
+    top: 158px
+    right: 0
+    .lastNewsPhotos
+      width: 227px
+      height: 227px
+      margin-right: unset
+      position: relative
+      .lastNewsPhotos__img
+        width: 217px
+        height: 217px
+        .blockImg
+          width: 227px
+          height: 227px
+          img
+            width: 100%
+            height: 100%
+      .lastNewsPhotos__headerText
+        font-size: 14px
+        font-weight: bold
+        .headerText
+          margin-top: 5px
+          margin-bottom: 5px
+          position: relative
+          .btnRead
+            font-size: 12px
+            position: absolute
+            bottom: -133px
+            right: 15px
+          &:hover .btnRead
+            color: #e69600
+            border-bottom: 1px solid #e69600
+          &:hover
+            color: #e69600
+      .lastNewsPhotos__text
+        font-size: 11px
+        line-height: 20px
+      .lastNewsPhotos__dataBtnRead
+        width: unset
+        display: flex
+        justify-content: space-between
+        margin-top: 30px
+  .blockLastNewsPhotos .lastNewsPhotos4
+    display: none

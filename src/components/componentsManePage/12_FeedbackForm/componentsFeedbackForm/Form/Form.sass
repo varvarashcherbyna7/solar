@@ -1,0 +1,220 @@
+.containerFeedbackForm__form
+  max-width: 1114px
+  margin: 0 auto
+  padding-top: 200px
+  padding-bottom: 91px
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  position: relative
+  .containerFeedbackForm-text
+    width: 295px
+    position: absolute
+    font-size: 14px
+    line-height: 24px
+    color: rgba(0, 0, 0, 0.6)
+    bottom: 120px
+    right: -160px
+  .headerText
+    color: #000000
+    font-size: 48px
+    padding-bottom: 72px
+  .formFeedback
+    width: 580px
+    position: relative
+    div div
+      padding-bottom: 52px
+      p
+        font-size: 14px
+        line-height: 30px
+        color: rgba(0, 0, 0, 0.6)
+    .blockInputNamePhone, .blockInputCompanyEmail, .blockInputComment
+      display: flex
+      justify-content: left
+      div
+        margin-right: 27px
+      .blockInputNamePhone__name,
+      .blockInputNamePhone__phone,
+      .blockInputCompanyEmail__company,
+      .blockInputCompanyEmail__email,
+      .blockInputComment__comment
+        position: relative
+        input, textarea
+          width: 238px
+          font-size: 16px
+          padding: 10px
+          border: none
+          border-bottom: 1px solid #ccc
+          background: transparent
+          &:focus
+            color: #000000
+            border-bottom: 1px solid #e69600
+            outline: #e69600
+          p
+            color: #999
+          &:focus p
+            color: #e69600
+      .blockInputNamePhone__phone
+        input[placeholder]
+          color: rgba(0, 0, 0, 0.5)
+    .blockInputCheckbox
+      display: flex
+      justify-content: left
+      padding-bottom: 70px
+      input[type='checkbox']
+        display: none
+        align-self: center
+      .contentFormCheckboxText
+        align-self: center
+        margin-left: 35px
+        width: 63%
+        .contentFormCheckboxText-black
+          color: rgba(0, 0, 0, 0.6)
+        .contentFormCheckboxText-yellow
+          color: #e69600
+        &::before
+          content: ""
+          display: inline-block
+          width: 25px
+          height: 25px
+          border: 1px solid rgba(0, 0, 0, 0.5)
+          border-radius: 3px
+          vertical-align: middle
+          margin-right: 10px
+          position: absolute
+          left: 0
+      input[type='checkbox']:checked + .contentFormCheckboxText::before
+        margin: 0 auto
+        background: url('imgForm/checkbox.png') no-repeat 6px 3.5px
+    .blockText
+      color: rgba(0, 0, 0, 0.5)
+    .blockInputSubmit
+      width: 77px
+      height: 77px
+      background: #e69600
+      position: absolute
+      right: 0
+      bottom: 180px
+      border-radius: 50%
+      z-index: 2
+      .blockArrowRight
+        text-align: center
+        margin: 25.5px auto
+        position: relative
+        img
+          margin-left: 7px
+        input
+          width: 100%
+          height: 95%
+          margin: 0 auto
+          border-radius: 50%
+          border: none
+          position: absolute
+          top: -25.5px
+          right: 0
+          z-index: 1
+          background: transparent
+          color: #e69600
+
+@media screen and (max-width: 960px)
+  .containerFeedbackForm__form
+    max-width: 726px
+    margin: 0 auto
+    padding-top: 25px
+    padding-bottom: 25px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    position: relative
+    .containerFeedbackForm-text
+      width: unset
+      position: absolute
+      font-size: 11px
+      line-height: 20px
+      bottom: 55px
+      right: 0
+    .headerText
+      font-size: 22px
+      padding-bottom: 55px
+    .formFeedback
+      width: 380px
+      position: relative
+      div div
+        padding-bottom: 42px
+        p
+          font-size: 11px
+          line-height: 20px
+          color: rgba(0, 0, 0, 0.6)
+      .blockInputNamePhone, .blockInputCompanyEmail, .blockInputComment
+        display: flex
+        justify-content: left
+        div
+          margin-right: 17px
+        .blockInputNamePhone__name,
+        .blockInputNamePhone__phone,
+        .blockInputCompanyEmail__company,
+        .blockInputCompanyEmail__email,
+        .blockInputComment__comment
+          position: relative
+          input, textarea
+            width: 167px
+            font-size: 14px
+            padding: 10px
+            border: none
+            border-bottom: 1px solid #ccc
+            background: transparent
+            &:focus
+              color: #000000
+              border-bottom: 1px solid #e69600
+              outline: #e69600
+            p
+              color: #999
+            &:focus p
+              color: #e69600
+        .blockInputNamePhone__phone
+          input[placeholder]
+            color: rgba(0, 0, 0, 0.5)
+      .blockInputCheckbox
+        display: flex
+        justify-content: left
+        padding-bottom: 70px
+        input[type='checkbox']
+          display: none
+          align-self: center
+        .contentFormCheckboxText
+          font-size: 11px
+          line-height: 20px
+          align-self: center
+          margin-left: 35px
+          width: 65%
+          &::before
+            content: ""
+            display: inline-block
+            width: 24px
+            height: 24px
+            border: 1px solid rgba(0, 0, 0, 0.5)
+            border-radius: 3px
+            vertical-align: middle
+            margin-right: 10px
+            position: absolute
+            left: 0
+        input[type='checkbox']:checked + .contentFormCheckboxText::before
+          background: url('imgForm/checkbox.png') no-repeat 5px 3.5px
+      .blockText
+        color: rgba(0, 0, 0, 0.5)
+      .blockInputSubmit
+        width: 57px
+        height: 57px
+        background: #e69600
+        position: absolute
+        right: 0
+        bottom: 170px
+        border-radius: 50%
+        z-index: 2
+        .blockArrowRight
+          height: 100%
+          border-radius: 50%
+          padding-top: 16px
+          margin: 0 auto
+          input
+            top: -16px

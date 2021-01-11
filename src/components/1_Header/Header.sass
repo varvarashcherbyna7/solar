@@ -1,0 +1,62 @@
+.containerHeader
+  width: 100%
+  background: black
+  .information
+    max-width: 1114px
+    margin: 0 auto
+    position: relative
+    display: flex
+    justify-content: space-between
+    font-size: 12px
+    padding-top: 12.5px
+    padding-bottom: 12.5px
+    .information__company
+      width: 370px
+    .information__language
+      width: 70px
+    .information__company, .information__language
+      display: flex
+      justify-content: space-between
+
+@media screen and (max-width: 960px)
+  .containerHeader
+    height: 0
+    position: relative
+    .information
+      max-width: 726px
+      flex-direction: column
+      margin-top: 15px
+      position: relative
+      top: 300px
+      left: -100%
+      opacity: 1
+      transition: all 0.3s ease-in-out
+    .information.active
+      left: 0
+      opacity: 1
+      transition: all 0.5s ease-in-out
+      z-index: 1
+      .information__company
+        margin-left: 70px
+        width: 370px
+        flex-direction: column
+      .information__language
+        margin-left: 70px
+        margin-top: 15px
+        width: 70px
+      .information__company li, .information__language li
+        line-height: 20px
+
+//@media  (max-width: 768px)
+//  .information
+//    margin-top: 0
+//    top: 300px
+//    .information__company
+//      display: none
+//  .information.active
+//    left: 50px
+//    .information__company
+//      display: block
+//    .information__language
+//      margin-top: 10px
+//    .information__company, .information__language

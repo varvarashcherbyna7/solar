@@ -1,0 +1,39 @@
+.nav__logo
+  display: flex
+  justify-content: space-between
+  align-self: center
+  margin-left: 5px
+  .logoImg, .logoText
+    align-self: center
+  .logoImg
+    width: 75px
+    img
+      width: 100%
+
+@media screen and (max-width: 960px)
+  .nav__logo
+    margin-left: 30px
+    justify-content: left
+    div
+      &:first-child
+        width: 23%
+        img
+          width: 100%
+      &:nth-child(2)
+        width: 55%
+        img
+          width: 100%
+
+//@media  (max-width: 768px)
+//  .nav__logo
+//    margin-left: 10px
+//    justify-content: left
+//    div
+//      &:first-child
+//        width: 23%
+//        img
+//          width: 100%
+//      &:nth-child(2)
+//        width: 55%
+//        img
+//          width: 100%

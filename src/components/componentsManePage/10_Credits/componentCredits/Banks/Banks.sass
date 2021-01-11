@@ -1,0 +1,55 @@
+.containerBanks
+  display: flex
+  justify-content: space-between
+  height: 556px
+  .borderBlock
+    width: 31%
+    height: 100%
+    border: 1px solid rgba(0, 0, 0, 0.5)
+    .bankBlock
+      width: 90%
+      height: 90%
+      margin: 5% auto
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      .bankBlock__img
+        margin-top: 75px
+        margin-bottom: 60px
+        text-align: center
+        height: 20%
+      .bankBlock__text
+        align-self: center
+        height: 48%
+        font-size: 14px
+        line-height: 24px
+        color: rgba(0, 0, 0, 0.5)
+        .bankBlock__text-black
+          color: #000000
+      .bankBlock__btnFindConditions
+        height: 5%
+        a
+          color: #e69600
+          font-size: 16px
+          border-bottom: 1px solid #e69600
+
+@media screen and (max-width: 960px)
+  .containerBanks
+    height: 397px
+    .borderBlock
+      .bankBlock
+        .bankBlock__img
+          margin: 6% auto
+          width: 88%
+          height: 20%
+          img
+            width: 100%
+            height: 100%
+        .bankBlock__text
+          height: 48%
+          font-size: 11px
+          line-height: 20px
+        .bankBlock__btnFindConditions
+          height: 5%
+          a
+            font-size: 12px

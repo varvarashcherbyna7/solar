@@ -1,0 +1,85 @@
+.containerThreeBlocks
+  width: 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  position: absolute
+  top: -141.5px
+  .mainContainerBlockAboutUs
+    width: 320px
+    height: 320px
+    background: center/100% no-repeat url("imgThreeBlocksAboutUs/block_bg.png")
+    .containerBlockAboutUs
+      margin: 18px auto
+      width: 280px
+      height: 280px
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      .containerBlockAboutUs__icon
+        width: 60px
+        height: 55px
+        img
+          width: 100%
+      .containerBlockAboutUs__headText, .containerBlockAboutUs__text
+        color: black
+        line-height: 30px
+      .containerBlockAboutUs__headText
+        font-size: 22px
+        height: 90px
+        margin-top: 20px
+      .containerBlockAboutUs__text
+        font-size: 16px
+
+@media screen and (max-width: 960px)
+  .containerThreeBlocks
+    justify-content: space-between
+    top: -113px
+    .mainContainerBlockAboutUs
+      width: 228px
+      height: 228px
+      .containerBlockAboutUs
+        width: 203px
+        height: 203px
+        .containerBlockAboutUs__icon
+          width: 40px
+          height: 40px
+          img
+            width: 100%
+        .containerBlockAboutUs__headText, .containerBlockAboutUs__text
+          color: black
+          line-height: 20px
+        .containerBlockAboutUs__headText
+          font-size: 14px
+          height: 60px
+          margin-top: 6px
+        .containerBlockAboutUs__text
+          font-size: 11px
+          color: rgba(0, 0, 0, 0.6)
+          line-height: 18px
+
+//@media screen and (max-width: 768px)
+//.containerThreeBlocks
+//  flex-direction: column
+//  top: -33px
+//  .mainContainerBlockAboutUs
+//    width: 350px
+//    height: 350px
+//    background: center/100% no-repeat url("./imgThreeBlocksAboutUs/block_bg.png")
+//    .containerBlockAboutUs
+//      width: 308px
+//      height: 308px
+//      .containerBlockAboutUs__icon
+//        width: 45px
+//        height: 45px
+//        img
+//          width: 100%
+//      .containerBlockAboutUs__headText, .containerBlockAboutUs__text
+//        color: black
+//        line-height: 30px
+//      .containerBlockAboutUs__headText
+//        font-size: 22px
+//        height: 90px
+//        margin-top: 30px
+//      .containerBlockAboutUs__text
+//        font-size: 16px

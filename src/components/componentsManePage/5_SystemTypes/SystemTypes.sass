@@ -1,0 +1,137 @@
+.containerSystemTypes
+  display: flex
+  justify-content: space-evenly
+  width: 100%
+  height: 890px
+  margin: 0 auto
+  .containerSystemTypes__bgs
+    width: 100%
+    margin: 0 auto
+    display: flex
+    justify-content: space-evenly
+    position: relative
+    .containerPhotovoltaicSystems, .containerThermodynamicSystems
+      display: flex
+      position: relative
+      z-index: -1
+      top: 0
+      width: 50%
+      height: 100%
+      margin: 0 auto
+    .containerThermodynamicSystems
+      background: center/100% no-repeat url("imgSystemTypes/imgThermodynamicSystems.png")
+      background-size: cover
+    .containerPhotovoltaicSystems
+      background: center/100% no-repeat url("imgSystemTypes/imgPhotovoltaicSystems.png")
+      background-size: cover
+      .imgTextLeft
+        position: absolute
+        left: 0
+        top: 6.5%
+    .container__context
+      display: flex
+      justify-content: space-between
+      width: 1114px
+      position: absolute
+      top: 180px
+      margin: 0 auto
+      .container__context-width
+        //max-width: 400px
+        .headerText
+          font-size: 45px
+          margin-bottom: 40px
+          .headerText-yellow
+            color: #e69600
+        .listContainer
+          ul
+            width: 340px
+            list-style: url("imgSystemTypes/tick.png")
+            li
+              display: flex
+              justify-content: space-between
+              font-size: 16px
+              line-height: 30px
+              margin-bottom: 18px
+              div
+                img
+                  margin-right: 28px
+        .btn
+          width: 250px
+          display: inline-block
+          font-size: 15px
+          letter-spacing: 3px
+          color: #ffffff
+          text-align: center
+          text-transform: uppercase
+          padding: 18px 30px
+          border: 2px solid #e69600
+          border-radius: 5px
+          transition: all 0.5s ease-in-out
+          &:hover
+            color: #000000
+            font-weight: bold
+            background: #e69600
+            transition: all 0.5s ease-in-out
+
+@media screen and (max-width: 960px)
+  .containerSystemTypes
+    height: 386px
+    .containerSystemTypes__bgs
+      width: 100%
+      justify-content: center
+      .containerPhotovoltaicSystems, .containerThermodynamicSystems
+        left: 0
+      .containerThermodynamicSystems
+      .containerPhotovoltaicSystems
+        .imgTextLeft
+          width: 40px
+          height: 386px
+          top: 11%
+          img
+            width: 100%
+      .container__context
+        justify-content: center
+        margin: 0 auto
+        max-width: 726px
+        top: 35px
+        //left: 0
+        .container__context-width
+          width: 249px
+          &:first-child
+            margin-right: 140px
+          .headerText
+            font-size: 22px
+            margin-bottom: 10px
+          .listContainer
+            ul
+              li
+                display: flex
+                justify-content: space-between
+                width: 248px
+                font-size: 11px
+                line-height: 20px
+                margin-bottom: 18px
+                .containerImgStick
+                  width: 25px
+                  margin-left: 5px
+                  margin-right: 10px
+                  img
+                    width: 100%
+                    margin-right: 15px
+          .btn
+            width: 170px
+            display: inline-block
+            font-size: 12px
+            letter-spacing: 3px
+            color: #ffffff
+            text-align: center
+            text-transform: uppercase
+            padding: 18px 30px
+            border: 2px solid #e69600
+            border-radius: 5px
+            transition: all 0.5s ease-in-out
+            &:hover
+              color: #000000
+              font-weight: bold
+              background: #e69600
+              transition: all 0.5s ease-in-out

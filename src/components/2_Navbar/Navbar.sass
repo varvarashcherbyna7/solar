@@ -1,0 +1,151 @@
+.containerNavbar
+  width: 100%
+  .containerNavbar__context
+    max-width: 1114px
+    margin: 0 auto
+    .nav
+      display: flex
+      justify-content: space-between
+      font-size: 15px
+      padding-top: 18px
+      padding-bottom: 18px
+      margin-right: 5px
+      position: relative
+      z-index: 2
+      .nav__menuIcon
+        display: none
+      .nav__items
+        display: flex
+        justify-content: space-between
+        align-self: center
+        width: 743px
+        .nav__item
+          text-align: right
+          .nav__item-container
+            display: flex
+            flex-direction: column
+            border-bottom: 2px solid transparent
+            transition: all 0.5s ease-in-out
+            &:hover
+              color: #e69600
+              border-bottom: 2px solid #e69600
+              transition: all 0.5s ease-in-out
+            &:hover div
+              color: #e69600
+            &:hover .arrowDown
+              border-top: 5px solid #e69600
+            div
+              display: flex
+              justify-content: space-between
+              span
+                margin-left: 5px
+          .arrowDown
+            width: 0
+            height: 0
+            border-left: 5px solid transparent
+            border-right: 5px solid transparent
+            border-top: 5px solid #ffffff
+            align-self: center
+          .arrowDown-marginRight
+            margin-right: 13px
+        .nav__item-textLeft
+          text-align: left
+        .dropdown
+          .dropdown-content
+            width: 100%
+            display: flex
+            justify-content: space-between
+            overflow: hidden
+            position: absolute
+            left: 0
+            height: 0
+        .dropdown:hover .dropdown-content
+          display: flex
+          justify-content: space-between
+          z-index: 2
+          overflow: visible
+          padding-top: 63px
+          height: 400px
+
+@media screen and (max-width: 960px)
+  .containerNavbar
+    width: 100%
+    .containerNavbar__context
+      max-width: 726px
+      margin: 0 auto
+      .nav
+        position: relative
+        .nav__menuIcon
+          display: flex
+          justify-content: center
+          flex-direction: column
+          text-align: center
+          font-size: 30px
+          margin-right: 30px
+          i
+            color: #e69600
+        .nav__items
+          display: flex
+          flex-direction: column
+          width: 0
+          position: absolute
+          top: 90px
+          left: -100%
+          opacity: 0
+          transition: all 0.3s ease-in-out
+          .nav__item
+            opacity: 0
+            a .nav__item-container
+              opacity: 1
+              transition: all 0.5s ease-in-out
+        .nav__items.active
+          left: 70px
+          opacity: 1
+          transition: all 0.5s ease-in-out
+          .nav__item
+            opacity: 1
+            transition: all 0.5s ease-in-out
+            text-align: left
+            line-height: 35px
+            .nav__item-container
+              display: flex
+              flex-direction: row
+              opacity: 1
+              border-bottom: 2px solid transparent
+              transition: all 0.5s ease-in-out
+              &:hover
+                color: #e69600
+                border-bottom: 2px solid #e69600
+                transition: all 0.5s ease-in-out
+              &:hover div
+                color: #e69600
+              &:hover .arrowDown
+                border-top: none
+              &:hover .arrowRight
+                border: solid #e69600
+                border-width: 0 3px 3px 0
+              div
+                margin-right: 7px
+            .arrowRight
+              border: solid #ffffff
+              border-width: 0 3px 3px 0
+              display: inline-block
+              padding: 3px
+              transform: rotate(-45deg)
+              position: absolute
+              left: 183px
+            .arrowDown-marginRight
+              margin-right: 0
+          .dropdown
+            position: relative
+            padding: 0
+            .dropdown-content
+              padding: 0
+              margin: 0
+          .dropdown:hover .dropdown-content
+            width: 330px
+            height: 180px
+            position: absolute
+            left: 200px
+            top: 1px
+            z-index: -1

@@ -1,0 +1,51 @@
+.block__image
+  position: relative
+  .imgBlock
+    width: 100%
+    height: 98.959%
+    img
+      width: 100%
+      height: 100%
+  .block__image--bg
+    opacity: 0
+    width: 100%
+    height: 98.959%
+    position: absolute
+    top: 0
+    z-index: 1
+    background: center/100% no-repeat url("imgBlockImage/bgImg_yellow.png")
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 40px
+    .textBg__header
+      font-size: 24px
+      margin-bottom: 14px
+      margin-top: 245px
+    .textBg__text
+      font-size: 16px
+      margin-bottom: 10px
+    .textBg__text, .textBg__imgArrows
+      padding-left: 4px
+.block__image:hover .block__image--bg
+  opacity: 1
+
+@media screen and (max-width: 960px)
+  .block__image
+    position: relative
+    .imgBlock
+      width: 98%
+      height: 96.959%
+      img
+        width: 100%
+        height: 100%
+    .block__image--bg
+      width: 98%
+      height: 96.959%
+      padding-left: 30px
+      .textBg__header
+        font-size: 14px
+        margin-top: 100px
+      .textBg__text
+        font-size: 11px

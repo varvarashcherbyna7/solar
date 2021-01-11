@@ -1,0 +1,75 @@
+.header
+  background: center/100% no-repeat url("imgContentHeaderBlock/heder_bg.png")
+  background-size: cover
+  max-height: 980px
+  position: relative
+  top: -96.47px
+  .companyContainer-bg
+    width: 100%
+    background: black
+  .dropDown-bg
+    display: none
+    width: 100%
+    height: 0
+    position: absolute
+    top: 120px
+    left: 0
+    z-index: 1
+    background: #000000
+    transition: all 0.5s ease-in-out
+  //background: rgba(0, 0, 0, 0.8)
+  .header__context
+    max-width: 1114px
+    margin: 0 auto
+    position: relative
+  .imgIcons
+    display: flex
+    justify-content: center
+    margin-top: 135px
+    margin-right: 5px
+    position: relative
+    bottom: 100px
+    .arrowDown
+      position: relative
+      bottom: 35px
+      animation: bounce 1s infinite ease-in-out
+      @keyframes bounce
+        0%
+          bottom: 0
+          opacity: 0
+        100%
+          opacity: 1
+          bottom: -25px
+    .socialNetwork
+      display: flex
+      justify-content: space-between
+      width: 55px
+      position: absolute
+      right: 0
+      bottom: 0
+
+@media screen and (max-width: 960px)
+  .header
+    height: 500px
+    //background: black
+    .header__context
+      height: 100%
+      position: relative
+    .imgIcons
+      bottom: -400px
+      margin-top: 0
+      .socialNetwork
+        margin-right: 30px
+
+//@media  (max-width: 768px)
+//  .header
+//    max-width: 400px
+//    width: 100%
+//    height: 600px
+//    .companyContainer-bg
+//    .header__context, .companyContainer__context
+//    .imgIcons
+//      margin-top: 395px
+//      position: unset
+//      .arrowDown
+//      .socialNetwork

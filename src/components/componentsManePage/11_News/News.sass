@@ -1,0 +1,27 @@
+.containerNews
+  background: center/100% no-repeat url("imgNews/bg.png")
+  background-size: cover
+  height: 887px
+  position: relative
+  .containerNews__imgTextLeft
+    position: absolute
+    left: 0
+    top: 11%
+  .containerNews__context
+    max-width: 1114px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    padding-top: 188px
+
+@media screen and (max-width: 960px)
+  .containerNews
+    height: unset
+    .containerNews__imgTextLeft
+      display: none
+    .containerNews__context
+      max-width: 726px
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
+      padding-top: unset

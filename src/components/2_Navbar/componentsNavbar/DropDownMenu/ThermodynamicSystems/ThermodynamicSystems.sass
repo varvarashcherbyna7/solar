@@ -1,0 +1,64 @@
+.containerThermodynamicSystems
+  display: flex
+  justify-content: center
+  font-size: 14px
+  width: 100%
+  margin-left: 5px
+  margin-right: 5px
+  .equipment, .decision
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    line-height: 30px
+    .equipment__header, .decision__header
+      font-size: 18px
+    .equipment__list, .decision__list
+  .equipment
+    margin-right: 50px
+
+@media screen and (max-width: 960px)
+  .containerThermodynamicSystems
+    width: 370px
+    flex-direction: row
+    justify-content: left
+    position: absolute
+    font-size: 14px
+    top: -35px
+    z-index: 2
+    left: 55px
+    .equipment, .decision
+      display: flex
+      flex-direction: column
+      line-height: 30px
+      margin-bottom: 28px
+      .equipment__header, .decision__header
+        margin-bottom: 10px
+        font-size: 18px
+        font-weight: bold
+      .equipment__list, .decision__list
+    .equipment
+      margin-right: 50px
+
+//@media screen and (max-width: 768px)
+//  .containerThermodynamicSystems
+//    flex-direction: column
+//    justify-content: space-between
+//    position: relative
+//    background: #000000
+//    width: 230px
+//    height: 317px
+//    font-size: 12px
+//    top: 33px
+//    left: 0
+//    margin: 0
+//    padding: 0
+//    .equipment, .decision
+//      padding-left: 10px
+//      margin-bottom: 10px
+//      .equipment__header, .decision__header
+//        margin-bottom: 0
+//    .equipment__list, .decision__list
+//      display: flex
+//      flex-direction: column
+//    .equipment
+//      margin-right: 50px

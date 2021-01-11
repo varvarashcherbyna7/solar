@@ -1,0 +1,80 @@
+.containerServices
+  display: flex
+  justify-content: space-between
+  width: 100%
+  height: 100%
+  margin: 0 auto
+  margin-left: 5px
+  margin-right: 5px
+  .designing, .assembling, .teaching
+    display: flex
+    flex-direction: column
+    .designing__header, .assembling__header, .teaching__header
+      text-align: left
+      margin-bottom: 10px
+    .designing__items, .assembling__items, .teaching__items
+      display: flex
+      flex-direction: column
+      li
+        text-align: left
+        line-height: 30px
+
+@media screen and (max-width: 960px)
+  .containerServices
+    width: 450px
+    height: 250px
+    justify-content: space-between
+    position: absolute
+    top: -76px
+    z-index: 2
+    left: 20px
+    &>*
+      flex: 1 1
+    .designing, .assembling, .teaching
+      .designing__header, .assembling__header, .teaching__header
+        margin-bottom: 0
+      .designing__items, .assembling__items, .teaching__items
+        display: flex
+        flex-direction: column
+        li
+          width: 100%
+    .photoServices
+      display: none
+      width: 0
+      img
+        width: 100%
+    .teaching
+      align-self: baseline
+    .designing
+      margin-right: 25px
+
+//@media screen and (max-width: 768px)
+//  .containerServices
+//    flex-direction: row
+//    justify-content: space-between
+//    position: relative
+//    top: 33px
+//    left: 0
+//    background: #000000
+//    width: 230px
+//    height: 317px
+//    font-size: 12px
+//    padding-left: 10px
+//    margin: 0
+//    &>*
+//      flex: 1
+//    .designing, .assembling, .teaching
+//      width: 180px
+//      height: 200px
+//      margin-bottom: 5px
+//      .designing__header, .assembling__header, .teaching__header
+//        margin-bottom: 5px
+//      .designing__items, .assembling__items, .teaching__items
+//        display: flex
+//        flex-direction: column
+//        li
+//          width: 100%
+//          line-height: 20px
+//    .photoServices
+//      img
+//        display: none
